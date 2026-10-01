@@ -1,5 +1,6 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logoImage from "../assets/logo/LOCAL_HONEY_WORDS_WHITE+ON+TRANSPARENT.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +18,7 @@ const Navbar = () => {
         {/* Logo */}
         <a href="/" className="block">
           <img
-            src="/src/assets/logo/LOCAL_HONEY_WORDS_WHITE.png"
+            src={logoImage}
             alt="Local Honey Hair"
             className="w-32 md:w-36"
           />
