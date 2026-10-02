@@ -3,6 +3,7 @@ import BrandStatement from "../components/BrandStatement";
 import ServicesSection from "../components/ServicesSection";
 import StylistsSection from "../components/StylistsSection";
 import EditorialSection from "../components/EditorialSection";
+import LocationsSection from "../components/LocationsSection";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <BrandStatement />
       <ServicesSection />
       <StylistsSection />
+      <LocationsSection />
       <EditorialSection />
     </>
   );
