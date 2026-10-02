@@ -1,20 +1,16 @@
+import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import BrandStatement from "./components/BrandStatement";
-import ServicesSection from "./components/ServiceSection";
-import EditorialSection from "./components/EditorialSection";
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
+
       <main>
-        <Hero />
-        <BrandStatement />
-        <ServicesSection />
-        <EditorialSection />
+        <AppRoutes />
       </main>
-    </>
+    </BrowserRouter>
   );
 }
 

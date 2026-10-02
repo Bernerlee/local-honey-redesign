@@ -1,6 +1,7 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import logoImage from "../assets/logo/LOCAL_HONEY_WORDS_WHITE+ON+TRANSPARENT.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,13 +28,13 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <div className="hidden items-center gap-7 lg:flex">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.name}
-              href={link.href}
+              to={link.href}
               className="text-[13px] font-medium uppercase tracking-[0.12em] text-white transition-opacity duration-300 hover:opacity-50"
             >
               {link.name}
-            </a>
+            </Link>
           ))}
 
           <a
