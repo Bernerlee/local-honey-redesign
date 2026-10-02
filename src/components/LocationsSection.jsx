@@ -1,6 +1,6 @@
-import atlantaImage from "../assets/images/ATL photo.jpg";
-import eastNashvilleImage from "../assets/images/EAST INTERIOR 2.jpg";
-import eighthAveImage from "../assets/images/DSCF3256 2.jpeg";
+import atlantaImage from "../assets/images/ATL+photo.jpg";
+import eastNashvilleImage from "../assets/images/EAST+INTERIOR+2.jpg";
+import eighthAveImage from "../assets/images/DSCF3256+2.jpeg";
 
 const locations = [
   {
