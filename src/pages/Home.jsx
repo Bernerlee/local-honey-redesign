@@ -5,6 +5,7 @@ import StylistsSection from "../components/StylistsSection";
 import EditorialSection from "../components/EditorialSection";
 import LocationsSection from "../components/LocationsSection";
 import EducationSection from "../components/EducationSection";
+import NewGuestSection from "../components/NewGuestSection";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <StylistsSection />
       <LocationsSection />
       <EducationSection />
+      <NewGuestSection />
       <EditorialSection />
     </>
   );
