@@ -15,14 +15,13 @@ const Home = () => {
       <Hero />
       <BrandStatement />
       <ServicesSection />
+      <EditorialSection />
       <StylistsSection />
       <LocationsSection />
       <EducationSection />
       <NewGuestSection />
       <ReviewSection />
       <BookingCTA />
-
-      <EditorialSection />
     </>
   );
 };
