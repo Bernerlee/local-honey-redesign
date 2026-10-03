@@ -7,6 +7,7 @@ import LocationsSection from "../components/LocationsSection";
 import EducationSection from "../components/EducationSection";
 import NewGuestSection from "../components/NewGuestSection";
 import ReviewSection from "../components/ReviewSection";
+import BookingCTA from "../components/BookingCTA";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <EducationSection />
       <NewGuestSection />
       <ReviewSection />
+      <BookingCTA />
 
       <EditorialSection />
     </>
