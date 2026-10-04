@@ -1,21 +1,18 @@
 const reviews = [
   {
     quote:
-      "I have never felt more comfortable and confident leaving a salon. The entire experience was welcoming from beginning to end.",
-    name: "Local Honey Guest",
-    location: "Atlanta",
+      "Gray gave me the best shape and cut of my life. She is incredibly detailed, and I'm so glad I found her!",
+    name: "Kara Mackenzie",
   },
   {
     quote:
-      "The stylist really listened to what I wanted and helped me find a look that felt completely like me.",
-    name: "Local Honey Guest",
-    location: "Nashville",
+      "Ash transformed my hair, gave me an easy routine to follow, and made me feel so confident and in love with my curls.",
+    name: "Sarah H",
   },
   {
     quote:
-      "The atmosphere, the people, and the attention to detail make this place feel different from anywhere else.",
-    name: "Local Honey Guest",
-    location: "Nashville",
+      "Exceptional, professional, and fun. Ash listened to my ideas, was incredibly helpful, and gave me a wonderful haircut.",
+    name: "Charlotte Dunn",
   },
 ];
 
@@ -70,10 +67,6 @@ const ReviewsSection = () => {
               <div className="mt-10">
                 <p className="text-[10px] font-medium uppercase tracking-[0.18em] text-white/70">
                   {review.name}
-                </p>
-
-                <p className="mt-2 text-[9px] uppercase tracking-[0.18em] text-white/30">
-                  {review.location}
                 </p>
               </div>
             </article>
