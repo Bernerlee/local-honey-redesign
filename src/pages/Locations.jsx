@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 
 const locations = [
@@ -57,7 +56,7 @@ const locations = [
     ],
     description:
       "A bright, intimate salon in one of Nashville's walkable neighborhoods, perfect for making a little time for yourself.",
-    image: "/images/locations/8th-avenue.jpg",
+    image: "/images/locations/8th-avenue.jpeg",
     mapUrl:
       "https://www.google.com/maps/search/?api=1&query=Local+Honey+Hair+2106+8th+Avenue+South+Nashville+TN+37204",
   },
@@ -133,10 +132,7 @@ function LocationSection({ location, reverse }) {
 
             <div className="space-y-3">
               {location.hours.map(([day, time]) => (
-                <div
-                  key={day}
-                  className="flex justify-between gap-4 text-sm"
-                >
+                <div key={day} className="flex justify-between gap-4 text-sm">
                   <span className="opacity-65">{day}</span>
                   <span className="text-right">{time}</span>
                 </div>
@@ -185,8 +181,8 @@ export default function Locations() {
 
           <div className="mt-12 grid gap-8 md:grid-cols-2 md:items-end">
             <p className="max-w-xl text-xl leading-8 md:text-2xl">
-              Different neighborhoods, different personalities, the same
-              love for great hair. Find the Local Honey closest to you.
+              Different neighborhoods, different personalities, the same love
+              for great hair. Find the Local Honey closest to you.
             </p>
 
             <nav
