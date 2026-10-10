@@ -30,6 +30,51 @@ import eighth14 from "../assets/images/8th-avenue-stylists/Screenshot+2025-03-02
 import eighth15 from "../assets/images/8th-avenue-stylists/Screenshot+2025-08-04+at+10.11.23+AM.png";
 import eighth16 from "../assets/images/8th-avenue-stylists/Screenshot+2025-12-26+at+9.56.11+AM.png";
 
+//east-nashville-images
+
+// East Nashville images
+import east1 from "../assets/images/east-nashville-stylists/Brian+Hickman.png";
+import east2 from "../assets/images/east-nashville-stylists/C!_LH+PORTS313943.jpg";
+import east3 from "../assets/images/east-nashville-stylists/C!_LH+PORTS314142.jpg";
+import east4 from "../assets/images/east-nashville-stylists/C1_LHportraits16414.jpg";
+import east5 from "../assets/images/east-nashville-stylists/C1_LHportraits2533.jpg";
+import east6 from "../assets/images/east-nashville-stylists/C1_LHportraits2634.jpg";
+import east7 from "../assets/images/east-nashville-stylists/C1_LHportraits2874.jpg";
+import east8 from "../assets/images/east-nashville-stylists/C1_LHportraits7769.jpg";
+import east9 from "../assets/images/east-nashville-stylists/C1_LHportraits8369+copy.jpg";
+import east10 from "../assets/images/east-nashville-stylists/C1_LHportraits8954.jpg";
+import east11 from "../assets/images/east-nashville-stylists/Carly+Rae.png";
+import east12 from "../assets/images/east-nashville-stylists/Copy_2Bof_2BC1_ArtistInteract11775.jpg";
+import east13 from "../assets/images/east-nashville-stylists/IMG_1998.png";
+import east14 from "../assets/images/east-nashville-stylists/IMG_2390.jpg";
+import east15 from "../assets/images/east-nashville-stylists/IMG_4419.jpeg";
+import east16 from "../assets/images/east-nashville-stylists/IMG_6376.JPEG";
+import east17 from "../assets/images/east-nashville-stylists/IMG_6881.jpg";
+import east18 from "../assets/images/east-nashville-stylists/LIND.jpg";
+import east19 from "../assets/images/east-nashville-stylists/PHOTO-2026-07-13-20-25-54.jpeg";
+import east20 from "../assets/images/east-nashville-stylists/PHOTO-2026-07-24-15-25-24.jpeg";
+import east21 from "../assets/images/east-nashville-stylists/Screenshot+2024-01-12+at+9.12.57+AM.png";
+import east22 from "../assets/images/east-nashville-stylists/Screenshot+2024-01-30+at+8.31.03+PM.png";
+import east23 from "../assets/images/east-nashville-stylists/Screenshot+2024-02-26+at+7.01.53+PM.png";
+import east24 from "../assets/images/east-nashville-stylists/Screenshot+2024-02-26+at+7.02.08+PM.png";
+import east25 from "../assets/images/east-nashville-stylists/Screenshot+2024-06-15+at+4.21.44+PM.png";
+import east26 from "../assets/images/east-nashville-stylists/Screenshot+2024-06-20+at+2.28.17+PM.png";
+import east27 from "../assets/images/east-nashville-stylists/Screenshot+2024-07-16+at+12.19.17+PM.png";
+import east28 from "../assets/images/east-nashville-stylists/Screenshot+2024-08-23+at+10.39.11+AM.png";
+import east29 from "../assets/images/east-nashville-stylists/Screenshot+2025-03-02+at+1.00.15+PM.png";
+import east30 from "../assets/images/east-nashville-stylists/Screenshot+2025-06-16+at+11.34.21+AM.png";
+import east31 from "../assets/images/east-nashville-stylists/Screenshot+2025-06-25+at+6.49.07+PM.png";
+import east32 from "../assets/images/east-nashville-stylists/Screenshot+2025-07-03+at+6.17.31+PM.png";
+import east33 from "../assets/images/east-nashville-stylists/Screenshot+2025-08-04+at+10.10.04+AM.png";
+import east34 from "../assets/images/east-nashville-stylists/Screenshot+2025-08-04+at+10.11.09+AM.png";
+import east35 from "../assets/images/east-nashville-stylists/Screenshot+2025-08-14+at+7.31.28+PM.png";
+import east36 from "../assets/images/east-nashville-stylists/Screenshot+2025-12-26+at+10.51.23+AM.png";
+import east37 from "../assets/images/east-nashville-stylists/Screenshot+2025-12-26+at+9.56.30+AM.png";
+import east38 from "../assets/images/east-nashville-stylists/Screenshot+2026-01-23+at+8.06.58+AM.png";
+import east39 from "../assets/images/east-nashville-stylists/Screenshot+2026-01-23+at+8.08.34+AM.png";
+import east40 from "../assets/images/east-nashville-stylists/Screenshot+2026-07-03+at+3.14.29+PM.png";
+import east41 from "../assets/images/east-nashville-stylists/Screenshot+2026-07-03+at+4.20.38+PM.png";
+
 const atlantaStylists = [
   { name: "Kazia Rosemond", image: atlanta1 },
   { name: "Rachel Grogan", image: atlanta2 },
@@ -60,6 +105,50 @@ const eighthAvenueStylists = [
   { name: "Eliza Morrow", image: eighth14 },
   { name: "Corinna Vollmer", image: eighth15 },
   { name: "Kanden Dawkins", image: eighth16 },
+];
+
+const eastNashvilleStylists = [
+  { name: "Brian Hickman", image: east1 },
+  { name: "Gray Mattes", image: east2 },
+  { name: "Carly Rae Coady", image: east3 },
+  { name: "Kat", image: east4 },
+  { name: "Savana Clayton", image: east5 },
+  { name: "Ari Harvey", image: east6 },
+  { name: "Stan Newton", image: east7 },
+  { name: "Kayla Isbell", image: east8 },
+  { name: "Daniel Dalecke", image: east9 },
+  { name: "Tonya Goss", image: east10 },
+  { name: "Taryn Sneed", image: east11 },
+  { name: "Alyssa Bradley", image: east12 },
+  { name: "Paige Thomsp on".replace(" ", ""), image: east13 },
+  { name: "Anna Grace", image: east14 },
+  { name: "Madi Hysner", image: east15 },
+  { name: "Kenzie Taylor", image: east16 },
+  { name: "Liz Sacci", image: east17 },
+  { name: "Lexi Bertling", image: east18 },
+  { name: "Kaylee Culbertson", image: east19 },
+  { name: "Grace Dawson", image: east20 },
+  { name: "Mal McCormick", image: east21 },
+  { name: "Andrew Does Hair", image: east22 },
+  { name: "Shauna Hyde", image: east23 },
+  { name: "Caroline Allen", image: east24 },
+  { name: "Sharon Kessler", image: east25 },
+  { name: "Brianna Brusich", image: east26 },
+  { name: "Addie Williams", image: east27 },
+  { name: "Tasha Bezesky", image: east28 },
+  { name: "Lindsey Felton", image: east29 },
+  { name: "Emily-Jane", image: east30 },
+  { name: "Chardonnay Wilson", image: east31 },
+  { name: "Roo Stiegler", image: east32 },
+  { name: "Violet Andrews", image: east33 },
+  { name: "Kathleen Grooms", image: east34 },
+  { name: "Rylee Cooper", image: east35 },
+  { name: "Sarah Manning", image: east36 },
+  { name: "Paris Brennan", image: east37 },
+  { name: "Meshia McClay", image: east38 },
+  { name: "Ava Sayar", image: east39 },
+  { name: "Lily O’Neal", image: east40 },
+  { name: "Marina Nichols", image: east41 },
 ];
 
 function StylistCard({ stylist }) {
@@ -185,43 +274,39 @@ export default function Stylists() {
       </section>
 
       {/* EAST NASHVILLE PLACEHOLDER */}
+
+      {/* EAST NASHVILLE */}
       <section
         id="east-nashville"
-        className="bg-[#111111] px-6 py-24 text-[#F5F2EC] md:px-10 md:py-32"
+        className="mx-auto max-w-[1400px] px-6 py-24 md:px-10 md:py-32"
       >
-        <div className="mx-auto max-w-[1400px]">
-          <div className="grid gap-12 md:grid-cols-[1fr_1fr] md:items-end">
-            <div>
-              <span className="mb-8 block text-xs uppercase tracking-[0.2em] opacity-50">
-                02
-              </span>
+        <LocationHeader
+          number="02"
+          location="East Nashville"
+          address={
+            <>
+              519 Gallatin Ave
+              <br />
+              Nashville, TN 37206
+            </>
+          }
+        />
 
-              <h2 className="text-5xl font-medium tracking-[-0.04em] md:text-7xl">
-                East
-                <br />
-                Nashville.
-              </h2>
-            </div>
+        <div className="mb-12 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <p className="max-w-xl text-lg leading-7 opacity-70">
+            Meet the artists who bring their own perspective, creativity, and
+            expertise to the Local Honey experience.
+          </p>
 
-            <div className="md:text-right">
-              <p className="mb-8 text-sm leading-6 opacity-60">
-                519 Gallatin Ave
-                <br />
-                Nashville, TN 37206
-              </p>
+          <span className="text-xs uppercase tracking-[0.18em] opacity-50">
+            {eastNashvilleStylists.length} Artists
+          </span>
+        </div>
 
-              <p className="text-lg leading-7 opacity-80">
-                Our East Nashville stylist collection is coming soon.
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-20 border border-white/20 p-10 md:p-16">
-            <p className="max-w-2xl text-2xl leading-9 md:text-4xl md:leading-[1.15]">
-              More artists, more portraits, more Local Honey. We’ll add the East
-              Nashville team here.
-            </p>
-          </div>
+        <div className="grid grid-cols-2 gap-x-4 gap-y-10 md:grid-cols-3 md:gap-x-6 md:gap-y-14 lg:grid-cols-4">
+          {eastNashvilleStylists.map((stylist) => (
+            <StylistCard key={stylist.name} stylist={stylist} />
+          ))}
         </div>
       </section>
 
