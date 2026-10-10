@@ -4,6 +4,7 @@ import Services from "../pages/Services";
 import Policies from "../pages/Policies";
 import Stylists from "../pages/Stylists";
 import Locations from "../pages/Locations";
+import Education from "../pages/Education";
 
 const AppRoutes = () => {
   return (
@@ -13,6 +14,7 @@ const AppRoutes = () => {
       <Route path="/policies" element={<Policies />} />
       <Route path="/stylists" element={<Stylists />} />
       <Route path="/locations" element={<Locations />} />
+      <Route path="/education" element={<Education />} />
     </Routes>
   );
 };
