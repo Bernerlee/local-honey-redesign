@@ -30,9 +30,7 @@ const Home = () => {
         <EditorialSection />
       </Reveal>
 
-      <Reveal>
-        <StylistsSection />
-      </Reveal>
+      <StylistsSection />
 
       <Reveal>
         <LocationsSection />

@@ -37,20 +37,28 @@ const revealUp = {
 const StylistsSection = () => {
   const shouldReduceMotion = useReducedMotion();
 
+  const gridVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.25,
+      },
+    },
+  };
+
   const cardVariants = {
     hidden: {
       opacity: 0,
-      y: shouldReduceMotion ? 0 : 36,
+      y: 60,
     },
-    visible: (index) => ({
+    visible: {
       opacity: 1,
       y: 0,
       transition: {
-        duration: shouldReduceMotion ? 0 : 0.75,
-        delay: shouldReduceMotion ? 0 : index * 0.14,
+        duration: 0.9,
         ease: [0.22, 1, 0.36, 1],
       },
-    }),
+    },
   };
 
   return (
@@ -89,7 +97,13 @@ const StylistsSection = () => {
         </div>
 
         {/* Individually animated stylist cards */}
-        <div className="grid gap-6 md:grid-cols-3">
+        <motion.div
+          className="grid gap-6 md:grid-cols-3"
+          variants={gridVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+        >
           {stylists.map((stylist, index) => (
             <motion.article
               key={index}
@@ -106,12 +120,10 @@ const StylistsSection = () => {
                     src={stylist.image}
                     alt={`${stylist.name} - Local Honey stylist`}
                     className="h-full w-full object-cover"
-                    whileHover={
-                      shouldReduceMotion ? undefined : { scale: 1.045 }
-                    }
+                    whileHover={{ scale: 1.08 }}
                     transition={{
-                      duration: 0.7,
-                      ease: [0.22, 1, 0.36, 1],
+                      duration: 0.8,
+                      ease: "easeOut",
                     }}
                   />
                 </div>
@@ -139,7 +151,7 @@ const StylistsSection = () => {
               </a>
             </motion.article>
           ))}
-        </div>
+        </motion.div>
 
         {/* CTA */}
         <motion.div
