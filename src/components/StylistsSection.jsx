@@ -1,3 +1,5 @@
+import { motion, useReducedMotion } from "motion/react";
+
 import stylistOne from "../assets/images/image-asset5.png";
 import stylistTwo from "../assets/images/image-asset10.png";
 import stylistThree from "../assets/images/image-asset11.png";
@@ -20,13 +22,48 @@ const stylists = [
   },
 ];
 
+const revealUp = {
+  hidden: { opacity: 0, y: 28 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.7,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+};
+
 const StylistsSection = () => {
+  const shouldReduceMotion = useReducedMotion();
+
+  const cardVariants = {
+    hidden: {
+      opacity: 0,
+      y: shouldReduceMotion ? 0 : 36,
+    },
+    visible: (index) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: shouldReduceMotion ? 0 : 0.75,
+        delay: shouldReduceMotion ? 0 : index * 0.14,
+        ease: [0.22, 1, 0.36, 1],
+      },
+    }),
+  };
+
   return (
     <section className="bg-[#F5F2EC] text-[#111111]">
       <div className="mx-auto max-w-[1600px] px-6 py-24 md:px-10 md:py-32 lg:px-14 lg:py-40">
         {/* Header */}
         <div className="mb-16 flex flex-col justify-between gap-8 md:mb-20 lg:flex-row lg:items-end">
-          <div>
+          <motion.div
+            variants={revealUp}
+            initial={shouldReduceMotion ? false : "hidden"}
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+          >
             <p className="mb-5 text-[10px] font-medium uppercase tracking-[0.3em] text-[#111111]/45">
               The People
             </p>
@@ -36,30 +73,52 @@ const StylistsSection = () => {
               <br />
               STYLISTS.
             </h2>
-          </div>
+          </motion.div>
 
-          <p className="max-w-sm text-sm leading-7 text-[#111111]/60 md:text-base">
+          <motion.p
+            className="max-w-sm text-sm leading-7 text-[#111111]/60 md:text-base"
+            variants={revealUp}
+            initial={shouldReduceMotion ? false : "hidden"}
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ delay: 0.15 }}
+          >
             Different perspectives. Different techniques. One shared belief:
             your hair should feel like you.
-          </p>
+          </motion.p>
         </div>
 
-        {/* Stylists */}
+        {/* Individually animated stylist cards */}
         <div className="grid gap-6 md:grid-cols-3">
           {stylists.map((stylist, index) => (
-            <article key={index} className="group">
+            <motion.article
+              key={index}
+              className="group"
+              custom={index}
+              variants={cardVariants}
+              initial={shouldReduceMotion ? false : "hidden"}
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.15 }}
+            >
               <a href="/stylists" className="block">
                 <div className="aspect-[3/4] overflow-hidden bg-[#dedbd4]">
-                  <img
+                  <motion.img
                     src={stylist.image}
                     alt={`${stylist.name} - Local Honey stylist`}
-                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                    className="h-full w-full object-cover"
+                    whileHover={
+                      shouldReduceMotion ? undefined : { scale: 1.045 }
+                    }
+                    transition={{
+                      duration: 0.7,
+                      ease: [0.22, 1, 0.36, 1],
+                    }}
                   />
                 </div>
 
                 <div className="mt-5 flex items-start justify-between border-t border-[#111111]/15 pt-4">
                   <div>
-                    <h3 className="text-lg font-medium tracking-[-0.02em]">
+                    <h3 className="text-lg font-medium tracking-[-0.02em] transition-opacity duration-300 group-hover:opacity-65">
                       {stylist.name}
                     </h3>
 
@@ -68,17 +127,28 @@ const StylistsSection = () => {
                     </p>
                   </div>
 
-                  <span className="text-lg text-[#111111]/40 transition-transform duration-300 group-hover:translate-x-1">
+                  <motion.span
+                    className="text-lg text-[#111111]/40"
+                    animate={{ x: 0 }}
+                    whileHover={shouldReduceMotion ? undefined : { x: 4 }}
+                    transition={{ duration: 0.25 }}
+                  >
                     →
-                  </span>
+                  </motion.span>
                 </div>
               </a>
-            </article>
+            </motion.article>
           ))}
         </div>
 
         {/* CTA */}
-        <div className="mt-16 border-t border-[#111111]/15 pt-8">
+        <motion.div
+          className="mt-16 border-t border-[#111111]/15 pt-8"
+          variants={revealUp}
+          initial={shouldReduceMotion ? false : "hidden"}
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-center">
             <p className="text-sm text-[#111111]/50">
               Find the stylist who feels right for you.
@@ -89,12 +159,16 @@ const StylistsSection = () => {
               className="group inline-flex w-fit items-center gap-5 bg-[#111111] px-7 py-4 text-xs font-semibold uppercase tracking-[0.14em] text-[#F5F2EC] transition-colors duration-300 hover:bg-[#333333]"
             >
               Meet the Full Team
-              <span className="transition-transform duration-300 group-hover:translate-x-1">
+              <motion.span
+                animate={{ x: 0 }}
+                whileHover={shouldReduceMotion ? undefined : { x: 4 }}
+                transition={{ duration: 0.25 }}
+              >
                 →
-              </span>
+              </motion.span>
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

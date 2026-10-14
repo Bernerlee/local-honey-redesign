@@ -8,20 +8,51 @@ import EducationSection from "../components/EducationSection";
 import NewGuestSection from "../components/NewGuestSection";
 import ReviewSection from "../components/ReviewSection";
 import BookingCTA from "../components/BookingCTA";
+import Reveal from "../components/Reveal";
 
 const Home = () => {
   return (
     <>
-      <Hero />
-      <BrandStatement />
-      <ServicesSection />
-      <EditorialSection />
-      <StylistsSection />
-      <LocationsSection />
-      <EducationSection />
-      <NewGuestSection />
-      <ReviewSection />
-      <BookingCTA />
+      {/* Hero enters as the page loads */}
+      <Reveal y={12}>
+        <Hero />
+      </Reveal>
+
+      <Reveal>
+        <BrandStatement />
+      </Reveal>
+
+      <Reveal>
+        <ServicesSection />
+      </Reveal>
+
+      <Reveal>
+        <EditorialSection />
+      </Reveal>
+
+      <Reveal>
+        <StylistsSection />
+      </Reveal>
+
+      <Reveal>
+        <LocationsSection />
+      </Reveal>
+
+      <Reveal>
+        <EducationSection />
+      </Reveal>
+
+      <Reveal>
+        <NewGuestSection />
+      </Reveal>
+
+      <Reveal>
+        <ReviewSection />
+      </Reveal>
+
+      <Reveal>
+        <BookingCTA />
+      </Reveal>
     </>
   );
 };
