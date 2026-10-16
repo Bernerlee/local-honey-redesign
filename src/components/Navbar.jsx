@@ -37,12 +37,12 @@ const Navbar = () => {
             </Link>
           ))}
 
-          <a
-            href="#book"
+          <Link
+            to="/book"
             className="ml-2 border border-white px-6 py-3 text-[13px] font-medium uppercase tracking-[0.12em] text-white transition-colors duration-300 hover:bg-white hover:text-[#111111]"
           >
             Book Now
-          </a>
+          </Link>
         </div>
 
         {/* Mobile menu button */}
@@ -71,13 +71,13 @@ const Navbar = () => {
               </a>
             ))}
 
-            <a
-              href="#book"
+            <Link
+              to="/book"
               onClick={() => setIsOpen(false)}
               className="w-fit border border-white px-6 py-3 text-sm uppercase tracking-[0.15em] text-white"
             >
               Book Now
-            </a>
+            </Link>
           </div>
         </div>
       )}

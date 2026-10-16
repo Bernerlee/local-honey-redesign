@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import heroImage from "../assets/images/LHscanscolored-58.jpg";
 
 const Hero = () => {
@@ -26,15 +27,15 @@ const Hero = () => {
                 Come as you are.
               </p>
 
-              <a
-                href="#book"
+              <Link
+                to="/book"
                 className="group flex w-fit items-center gap-5 bg-[#F5F2EC] px-7 py-4 text-xs font-semibold uppercase tracking-[0.14em] text-[#111111] transition-all duration-300 hover:bg-white"
               >
                 Book an Appointment
                 <span className="text-base transition-transform duration-300 group-hover:translate-x-1">
                   →
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
 
