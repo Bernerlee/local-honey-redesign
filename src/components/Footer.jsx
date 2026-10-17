@@ -72,6 +72,12 @@ const Footer = () => {
               >
                 New Guests
               </Link>
+              <Link
+                to="/careers"
+                className="w-fit text-sm text-white/70 transition-colors hover:text-white"
+              >
+                Careers
+              </Link>
             </nav>
           </div>
 

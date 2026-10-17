@@ -9,6 +9,7 @@ import NewGuests from "../pages/NewGuests";
 import Careers from "../pages/Careers";
 import Book from "../pages/Book";
 import Reviews from "../pages/Reviews";
+import NotFound from "../pages/NotFound";
 
 const AppRoutes = () => {
   return (
@@ -23,6 +24,9 @@ const AppRoutes = () => {
       <Route path="/careers" element={<Careers />} />
       <Route path="/book" element={<Book />} />
       <Route path="/reviews" element={<Reviews />} />
+
+      {/* NotFoundPage */}
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 };
